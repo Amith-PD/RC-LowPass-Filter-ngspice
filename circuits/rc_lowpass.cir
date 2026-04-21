@@ -1,0 +1,46 @@
+* RC Low Pass Filter (CORRECT)
+
+.param Rval=1k
+.param Cval=0.1u
+
+* Proper source (IMPORTANT)
+V1 in 0 AC 1 SIN(0 5 1k)
+
+R1 in out {Rval}
+C1 out 0 {Cval}
+
+.control
+
+* -------- TRANSIENT --------
+tran 10u 10m
+plot v(in) v(out)
+
+* -------- AC ANALYSIS (CORRECT) --------
+ac dec 100 10 100k
+
+* Plot gain in dB (VERY IMPORTANT)
+plot db(v(out))
+
+* -------- PARAMETER VARIATION --------
+
+* Case 1
+alter Rval=1k
+alter Cval=0.1u
+ac dec 100 10 100k
+plot db(v(out))
+
+* Case 2
+alter Rval=5k
+alter Cval=0.047u
+ac dec 100 10 100k
+plot db(v(out))
+
+* Case 3
+alter Rval=10k
+alter Cval=0.01u
+ac dec 100 10 100k
+plot db(v(out))
+
+.endc
+
+.end
