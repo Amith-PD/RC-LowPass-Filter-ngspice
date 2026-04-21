@@ -108,4 +108,4 @@ The RC Low-Pass Filter behaves as expected:
 
 ## 👨‍💻 Author
 
-Amit Airodagi
+Amith A Airodagi
