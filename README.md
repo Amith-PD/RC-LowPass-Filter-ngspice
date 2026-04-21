@@ -46,7 +46,7 @@ fc​=1/2πRC
 * Attenuation after cutoff
 * -20 dB/decade slope
 
-![AC Response](results/ac_response and other cases.png)
+results/ac_response and other cases.png 
 
 ---
 
@@ -58,7 +58,6 @@ fc​=1/2πRC
 | 2    | 5kΩ  | 0.047µF | Medium cutoff |
 | 3    | 10kΩ | 0.01µF  | Lower cutoff  |
 
-![Case1](results/ac_response and other cases.png)
 
 ---
 
