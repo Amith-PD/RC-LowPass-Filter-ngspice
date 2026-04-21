@@ -27,7 +27,7 @@ A simple RC Low-Pass Filter:
 
 ## 🧮 Cutoff Frequency
 
-fc​=1/2πRC1
+fc​=1/2πRC
 
 ---
 
