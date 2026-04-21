@@ -71,16 +71,6 @@ results/ac_response and other cases.png
 
 ---
 
-## ❌ Common Issues
-
-| Problem          | Reason            | Solution         |
-| ---------------- | ----------------- | ---------------- |
-| Flat graph       | Missing AC source | Add `AC 1`       |
-| Command error    | Wrong directory   | Use `/d`         |
-| File not running | `.txt` extension  | Rename to `.cir` |
-
----
-
 ## 🚀 Applications
 
 * Signal filtering
