@@ -1,6 +1,6 @@
 # 📊 RC Low-Pass Filter using ngspice
 
-## 🔷 Overview
+##  Overview
 
 This project demonstrates the simulation of an **RC Low-Pass Filter** using ngspice. The circuit is analyzed using **Transient Analysis**, **AC Analysis**, and **Parameter Variation** to study its behavior under different conditions.
 
@@ -27,43 +27,7 @@ A simple RC Low-Pass Filter:
 
 ## 🧮 Cutoff Frequency
 
-[
-f_c = \frac{1}{2\pi RC}
-]
-
----
-
-## 📁 Project Structure
-
-```
-RC-LowPass-Filter-ngspice/
-│── README.md
-│── circuits/
-│     └── rc_lowpass.cir
-│── results/
-│     ├── transient.png
-│     ├── ac_response.png
-│     ├── case1.png
-│     ├── case2.png
-│     └── case3.png
-```
-
----
-
-## ▶️ How to Run
-
-1. Open Command Prompt
-2. Navigate to ngspice bin directory:
-
-```
-cd /d "D:\VLSI Projects\NGSPICE\Spice64\bin"
-```
-
-3. Run simulation:
-
-```
-ngspice "path\to\rc_lowpass.cir"
-```
+fc​=1/2πRC1
 
 ---
 
@@ -74,8 +38,6 @@ ngspice "path\to\rc_lowpass.cir"
 * Shows capacitor charging/discharging
 * Output lags input
 
-![Transient](results/transient.png)
-
 ---
 
 ### 🔹 AC Analysis
@@ -84,7 +46,7 @@ ngspice "path\to\rc_lowpass.cir"
 * Attenuation after cutoff
 * -20 dB/decade slope
 
-![AC Response](results/ac_response.png)
+![AC Response](results/ac_response and other cases.png)
 
 ---
 
@@ -96,9 +58,7 @@ ngspice "path\to\rc_lowpass.cir"
 | 2    | 5kΩ  | 0.047µF | Medium cutoff |
 | 3    | 10kΩ | 0.01µF  | Lower cutoff  |
 
-![Case1](results/case1.png)
-![Case2](results/case2.png)
-![Case3](results/case3.png)
+![Case1](results/ac_response and other cases.png)
 
 ---
 
